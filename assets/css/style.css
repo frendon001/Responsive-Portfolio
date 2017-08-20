@@ -12,14 +12,17 @@ nav ul {
 
 }
 nav ul li {
-	display: inline-block;
+/*	display: inline-block;*/
+	display: inline;
 	text-align: center; 
 	border-right: 1px solid #a39d9d;
-	padding: 0px 10px 0px 0px;
+	padding: 0px;
 	margin: 15px 0px 15px 0px;
 
 }
 nav ul li a {
+	display: inline-block;
+	width: 90px;
 	text-decoration: none;
 	color: #777777;
 }
@@ -248,7 +251,10 @@ form input {
 MEDIA Breakpoints
 */
 @media screen and (max-width: 980px) {
-
+	nav ul {
+	    margin: 25px 50px 20px 0px;
+	    float: right;
+	}
 	/*
 	About Me Section up to 980px
 	*/
@@ -290,7 +296,16 @@ MEDIA Breakpoints
 		display: block;
 	}
 
+	/*
+	Contact Section up to 980px
+	*/
+	.contactSection {
+		width: 325px;
+	}
+	textarea {
+		width: 100%;
 
+	}
 
 
 
@@ -301,7 +316,7 @@ MEDIA Breakpoints
 	Navigation configuration
 	*/
 	nav ul {
-	    margin: 10px 20px 0px 0px;
+	    margin: 25px 20px 20px 0px;
 	    float: right;
 	}
 
@@ -364,6 +379,18 @@ MEDIA Breakpoints
 		display: inline-block;
 	}
 
+	/*
+	Contact Section up to 768px
+	*/
+	.contactSection {
+		width: 88%;
+		margin: 25px 0px 20px 20px;
+	}
+	textarea {
+		width: 100%;
+
+	}
+
 }
 
 
@@ -408,7 +435,7 @@ MEDIA Breakpoints
 	*/
 
 	.main-section-container {
-		padding: 25px 20px 25px 20px;
+		padding: 25px 0px 25px 20px;
 		min-width: 450px;
 	}
 	.profileImg {
@@ -436,14 +463,14 @@ MEDIA Breakpoints
 		position: static;
 		text-align: left;
 		width: 85%;
-		margin: 20px 0px 0px 0px;s
+		margin: 20px 0px 0px 0px;
 	}
 	#about-me-p1{
 		margin-top: 20px;
 	}
 
 	/*
-	Portfolio Section up to 980px
+	Portfolio Section up to 640px
 	*/
 	.portfolioSection {
 		width: 85%;
@@ -452,7 +479,7 @@ MEDIA Breakpoints
 	}
 	.portfolioImg {
 		width: 100%;
-		height: 18%;
+		height: 15%;
 	}
 
 	.portfolioCol2 {
@@ -460,6 +487,13 @@ MEDIA Breakpoints
 	}
 	.portfolioItem {
 		display: block;
+	}
+	/*
+	Contact Section up to 640px
+	*/
+	.contactSection {
+		width: 85%;
+		margin: 0px 0px 0px 0px;
 	}
 
 }
