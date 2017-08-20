@@ -244,16 +244,144 @@ form input {
 
 
 }
+/*
+MEDIA Breakpoints
+*/
+@media screen and (max-width: 980px) {
+	/*
+	About Me Section up to 980px
+	*/
+	.profileImg {
+		width: 300px;
+		height: 300px;
+		float: none;
+		margin: 0px 0px 20px 0px;
 
-@media screen and (max-width: 640px) {
+	}
 
+	.aboutMeSection {
+		width: 300px;
+		margin-bottom: 25px;
+	}
+
+	.nameHeader {
+		margin-right: 100px;
+		width: 230px;
+	}
 }
 
 @media screen and (max-width: 768px) {
+	/*
+	About Me Section upto 768px
+	*/
+	nav ul {
+	    margin: 0px 20px 0px 0px;
+	    float: right;
+	}
+
+	nav h1 {
+		margin: 0px 0px 0px 20px;
+	}
+	.profileImg {
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin: 0px 20px 0px 0px;
+
+	}
+
+	.aboutMeSection {
+		width: 88%;
+		display: block;
+		margin: 30px 0px 20px 20px;
+
+	}
+
+	.nameHeader {
+		margin-right: 0px;
+		width: 230px;
+	}
+	.connectBox {
+		display: block;
+		position: static;
+		margin: 0px 0px 20px 20px;
+		text-align: left;
+		width: 88%;
+	}
 
 }
 
-@media screen and (max-width: 980px) {
 
+@media screen and (max-width: 640px) {
+	/*
+	About Me Section upto 640px
+	*/
+
+	nav ul {
+	    margin: 0px 0px 0px 0px;
+	    float: none;
+	    width: 100%;
+/*
+	    Need to set width in order to
+	    break it out for navigation items
+*/
+	}
+
+
+/*	Set min width to prevent uncontrolled shrinkage*/
+	nav {
+		min-width: 465px;
+	}
+
+	nav h1 {
+		margin: 0px 0px 0px 0px;
+		display: block;
+	}
+
+	nav ul li {
+
+	    padding: 0px 0px 0px 0px;
+	    display: inline;
+
+	}
+	nav ul li a {
+	    display: inline-block;
+	    width: 31%;
+	    padding: 15px 0px 15px 0px;
+	}
+
+	.main-section-container {
+		padding: 25px 20px 25px 20px;
+		min-width: 450px;
+	}
+	.profileImg {
+		width: 200px;
+		height: 200px;
+		float: none;
+	    display: block;
+	    margin: 0 auto;
+
+	}
+
+	.aboutMeSection {
+		width: 85%;
+		display: block;
+		margin: 0px 0px 0px 0px;
+
+	}
+
+	.nameHeader {
+		margin-right: 0px;
+		width: 100%;
+	}
+	.connectBox {
+		display: block;
+		position: static;
+		text-align: left;
+		width: 85%;
+		margin: 20px 0px 0px 0px;s
+	}
+	#about-me-p1{
+		margin-top: 20px;
+	}
 }
-
