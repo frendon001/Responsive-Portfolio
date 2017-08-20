@@ -216,9 +216,9 @@ form input {
 
 }
 
-.portfolioImg:hover {
+/*.portfolioImg:hover {
 	border: 3px solid #3284BF;
-}
+}*/
 
 .portfolioItem{
 	display: inline-block;
@@ -248,6 +248,7 @@ form input {
 MEDIA Breakpoints
 */
 @media screen and (max-width: 980px) {
+
 	/*
 	About Me Section up to 980px
 	*/
@@ -268,20 +269,54 @@ MEDIA Breakpoints
 		margin-right: 100px;
 		width: 230px;
 	}
+
+	/*
+	Portfolio Section up to 980px
+	*/
+	.portfolioSection {
+		width: 300px;
+		margin-bottom: 25px;
+		padding-bottom: 0px;
+	}
+	.portfolioImg {
+		width: 300px;
+		height: 250px;
+	}
+
+	.portfolioCol2 {
+		float: none;
+	}
+	.portfolioItem {
+		display: block;
+	}
+
+
+
+
+
 }
 
 @media screen and (max-width: 768px) {
 	/*
-	About Me Section upto 768px
+	Navigation configuration
 	*/
 	nav ul {
-	    margin: 0px 20px 0px 0px;
+	    margin: 10px 20px 0px 0px;
 	    float: right;
 	}
 
 	nav h1 {
 		margin: 0px 0px 0px 20px;
 	}
+
+
+
+
+
+	/*
+	About Me Section upto 768px
+	*/
+
 	.profileImg {
 		width: 200px;
 		height: 200px;
@@ -309,14 +344,33 @@ MEDIA Breakpoints
 		width: 88%;
 	}
 
+	/*
+	Portfolio Section up to 768px
+	*/
+	.portfolioSection {
+		width: 88%;
+		padding-bottom: 0px;
+		margin: 25px 20px 20px 20px;
+	}
+	.portfolioImg {
+		width: 275px;
+		height: 225px;
+	}
+
+	.portfolioCol2 {
+		float: right;
+	}
+	.portfolioItem {
+		display: inline-block;
+	}
+
 }
 
 
 @media screen and (max-width: 640px) {
 	/*
-	About Me Section upto 640px
+	Navigation configuration
 	*/
-
 	nav ul {
 	    margin: 0px 0px 0px 0px;
 	    float: none;
@@ -326,7 +380,6 @@ MEDIA Breakpoints
 	    break it out for navigation items
 */
 	}
-
 
 /*	Set min width to prevent uncontrolled shrinkage*/
 	nav {
@@ -349,6 +402,10 @@ MEDIA Breakpoints
 	    width: 31%;
 	    padding: 15px 0px 15px 0px;
 	}
+
+	/*
+	About Me Section upto 640px
+	*/
 
 	.main-section-container {
 		padding: 25px 20px 25px 20px;
@@ -384,4 +441,25 @@ MEDIA Breakpoints
 	#about-me-p1{
 		margin-top: 20px;
 	}
+
+	/*
+	Portfolio Section up to 980px
+	*/
+	.portfolioSection {
+		width: 85%;
+		margin: 0px;
+		padding-bottom: 0px;
+	}
+	.portfolioImg {
+		width: 100%;
+		height: 18%;
+	}
+
+	.portfolioCol2 {
+		float: none;
+	}
+	.portfolioItem {
+		display: block;
+	}
+
 }
